@@ -6,24 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Firebase Node JS Tutorial</title>
 </head>
+<style>
+    .alert {
+        text-align: center;
+        padding: 10px;
+        background: #79c879;
+        color: #fff;
+        margin-bottom: 10px;
+        display: none;
+    }
+
+</style>
 <body>
     <h1>Firebase Node JS Tutorial</h1>
+    <div class="alert">Your name has been sent</div>
     <div>
         <form id="form">
             <p>
                 <label>Name</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" required>
             </p>
             <p>
                 <label>Age</label>
-                <input type="number" name="age" id="age">
+                <input type="number" name="age" id="age" required>
             </p>
             <p>
                 <button type="submit">Submit</button>
             </p>
         </form>
     </div>
-    
+
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-database.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
